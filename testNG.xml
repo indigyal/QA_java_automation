@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="myTest">
+    <test name="homework question test">
+        <parameter name="email" value="testone@testing.com" />
+        <parameter name="password" value="TestingOne" />
+<!--        <parameter name="a" value="5"/>-->
+<!--        <parameter name="b" value="3"/>-->
+<!--        <groups>-->
+<!--           <run>-->
+<!--                <exclude name="smoke"/>-->
+<!--                <exclude name="unit"/>-->
+<!--                <include name="testclass"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+        <classes>
+                <class name = "PracticeSeleniumSec11.L12_DataProvider"/>
+        </classes>
+    </test>
+<!--    <listeners>-->
+<!--&lt;!&ndash;        <listener class-name="org.testng.reporters.XMLReporter"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <listener class-name="org.testng.reporters.TestHTMLReporter"/>&ndash;&gt;-->
+<!--            <listener class-name="firstTest.ExtentReportsDemo"/>-->
+<!--    </listeners>-->
+</suite>

@@ -1,0 +1,106 @@
+In Java, getters and setters are methods used to access and modify the
+private fields (also known as instance variables) of a class.
+They are often used to implement encapsulation, which is one of the four fundamental
+Object-Oriented Programming (OOP) principles. Getters are used to retrieve the values
+of private fields, and setters are used to modify the values of private fields while
+providing control and validation.
+
+Getter Method:
+A getter method is used to retrieve the value of a private field.
+It typically follows the naming convention getFieldName() where FieldName is the name of the private field.
+It returns the value of the private field.
+
+Setter Method:
+A setter method is used to set the value of a private field.
+It typically follows the naming convention setFieldName(newValue) where FieldName is the name of the private field and newValue is the value to be assigned.
+It does not return a value (usually declared as void), but it modifies the private field.
+Using getters and setters allows you to control access to the private fields and enforce encapsulation.
+You can add additional logic within the setter method to perform validation or calculations when setting
+the field's value.
+
+Static vs Non Static:
+If you need to call a method directly by class name then make the method static.
+You can not over ride the static methods.. as they are static and can not change.
+Static method does not modify the state.
+Java does not allow non static variables in the static methods.
+Static methods mostly operates on arguments to return a value.
+
+Rules:
+If a method does not modify the state of the object or mot using any instance variable.
+You  want to call a method without creating an instance of that class.
+If function of the method with remain static across the class hierarchy is not good candidate for
+making static because Class an redefine equality.
+
+Use static - Factory or singleton design pattern, as a utility method, conversion tool.
+A static method belongs to the class itself and a non-static (aka instance) method belongs to each
+object that is generated from that class.
+If your method does something that doesn't depend on the individual characteristics of its class,
+make it static (it will make the program's footprint smaller). Otherwise, it should be non-static.
+
+Access Modifiers:
+Public: Public members are accessible from any other class. They have the widest scope and can be
+accessed by code in any class, even those in different packages.
+
+Private: Private members are accessible only within the same class. They have the narrowest scope
+and cannot be accessed from outside the class, even from subclasses.
+
+Protected: Protected members are accessible within the same class, its subclasses,
+and classes in the same package. They are not accessible from classes outside the package that are
+not subclasses.
+
+Default (no modifier): Members with no access modifier (also known as package-private)
+are accessible within the same package but not from classes outside the package,
+even if they are subclasses.
+
+
+Final Keyword in java----
+Final Variables:
+When you declare a variable as final, it means the variable's value cannot be changed
+once it is assigned.
+It essentially makes the variable a constant.
+You must initialize a final variable when it is declared, and you cannot reassign it.
+
+Final Methods:
+When you declare a method as final in a class, it means that subclasses cannot override that method.
+This is often used when you want to ensure that a particular method's implementation remains unchanged
+in derived classes.
+
+Final Classes:
+When you declare a class as final, it means that the class cannot be extended by other classes.
+It effectively prevents inheritance and ensures that the final class cannot have subclasses.
+
+Final Arguments:
+When you declare a method parameter as final, it means the argument cannot be modified within
+the method. This can be useful for ensuring that a method does not inadvertently change
+the value of an argument.
+
+Abstract Class:
+Abstract class can have abstract and non abstract methods.
+Where as interface can only have abstract methods and default static methods.
+
+Abstract class does not support multiple inheritance. Interface does.
+
+Abstract keyword
+Interface keyword
+
+extends
+implements
+
+Abstract class can extend another java class and implement multiple java interfaces.
+Interface can only be extended to another java class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
